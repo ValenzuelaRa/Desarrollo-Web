@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(220.55deg, #C5EDF5 0%, #4A879A 100%);
+    font-family: 'Cinzel', serif;
+}
+
+header h2{
+    color: #FFE3B3;
+    font-size: 3em;
+     text-transform: uppercase;
+     margin: 20px;
+     text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #ddf8ff79;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #123942;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.item label{
+    font-size: 1em;
+    color: #FFE3B3;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.item input{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffeacf;
+}
+
+.item input:hover{
+    opacity: 0.8;
+    cursor: default;
+}
+
+
+.item button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.8s;
+    background-color: #ffeacf;
+    color: #00263b9f;
+}
+
+.item button:hover{
+    background-color: #ddf8ff79;
+    color: #ffeacf;
+}
+
+.item input:focus{
+    outline-color: #00263b9f;
+}
+
+.error{
+    display: none;
+    color: #ffa1a1;
+    font-size: 0.9em;
+}

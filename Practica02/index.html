@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+    
+    <main>
+        
+        <header><h2>Inicio de Sesion</h2></header>
+        <div id="check"></div>
+        <form action="" id="formulario">
+
+            <!--Input de Usuario-->
+            <div class="item">
+
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" placeholder="Usuario">
+                <p class="error" id="error_usuario">Se requiere que ingrese el numero de usuario</p>
+            </div>
+
+            <!--Input de Password-->
+            <div class="item">
+
+                <label for="contraseña">Contraseña</label>
+                <input type="Contraseña" id="contraseña" placeholder="Contraseña">
+                <p class="error" id="error_contraseña">La contraseña tiene que ser minimo de 6 caracteres,<br> una mayuscula y un digito</p>
+            </div>
+
+             <!--Boton de submit-->
+            <div class="item sign in">
+                <button id="signIn">Sign in</button>
+            </div>
+
+
+        </form>
+
+
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
