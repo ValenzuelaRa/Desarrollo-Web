@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 229, 223, 0.486);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+header {
+  background-color: #3c1e1e;
+  color: rgb(255, 183, 183);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(188, 122, 122);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 30px rgba(69, 9, 9, 0.4);
+  margin-top: 200px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.group label {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  color: hsl(0, 91%, 13%);
+}
+
+.group input {
+  padding: 10px;
+  border: 1px solid #eac5c5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#sintomas {
+  height: 100px;
+}
+
+/* Estilos para los botones (puedes agregar botones según sea necesario) */
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
