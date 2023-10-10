@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header title = 'consultorio web'/>
         {children}
-        <Footer titleFooter = 'footer'/>
+        <Footer titleFooter = '© 2023 - 2023 consultorio - All Rights Reserved.'/>
       </body>
     </html>
   )
