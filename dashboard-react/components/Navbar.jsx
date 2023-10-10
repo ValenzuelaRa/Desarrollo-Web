@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className='bg-slate-600 w-1/3 p-4 h-screen mx-hi'>
+    <header className='bg-slate-600 w-1/ p-4 h-screen rounded-r-lg mx-hi'>
       <div className='flex justify-center items-center mb-4'>
         <Image
-          src="/ruta/de/la/imagen.jpg"
+        className='rounded-full'
           alt="Descripción de la imagen"
           width={50}
           height={50}
