@@ -1,12 +1,13 @@
+
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import '../style/style.css'; 
+import NavbarHorizontal from '@/components/NavbarHorizontal';
 
 export default function RootLayout({ children }) {
   return (
-    <div className="flex w-full">
-      <Navbar />
-      <div className="flex flex-col w-full">
+    <div>
+      <NavbarHorizontal/>
+      <div>
         {children}
       </div>
     </div>
