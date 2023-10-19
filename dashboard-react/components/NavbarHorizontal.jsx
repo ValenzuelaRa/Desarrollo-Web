@@ -6,8 +6,8 @@ import { BiMenuAltLeft } from 'react-icons/Bi';
 
 export const NavbarHorizontal = () => {
   return (
-    <header className='flex items-center justify-between px-4 h-200 sm:h-100 bg-slate-100'>
-      {/* Logo en el lado izquierdo, visible en pantallas mayores a 820px */}
+    <header className='flex items-center justify-between px-4 h-200 sm:h-100 bg-teal-100'>
+
       <div className='hidden sm:block'>
         <Image 
           src={require('../assets/img/logo.png')}
@@ -16,7 +16,7 @@ export const NavbarHorizontal = () => {
         />
       </div>
 
-      {/* Menú para pantallas mayores de 820px */}
+
       <div className='hidden sm:flex space-x-4'>
         <a href='#' className='text-black font-semibold p-4'>
           INICIO
