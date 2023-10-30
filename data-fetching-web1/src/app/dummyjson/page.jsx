@@ -1,22 +1,32 @@
-import React, { useEffect } from 'react'
-import { TarjetaProductoDummy } from '../../../components/TarjetaProductoDummy'
-import { useRouter } from 'next/navigation'
+'use client'
+import React, { useState } from 'react';
+import { obtenerProductosDummy } from '@/libs/Index-Fetch';
+import TarjetaProductoDummy from '@/components/TarjetaProductoDummy';
 
+const DummyJsonPage = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [products, setProducts] = useState([]);
 
+  const openModal = async () => {
+    const data = await obtenerProductosDummy();
+    setProducts(data.products);
+    setModalVisible(true);
+  };
 
-
-export const DummyJsonPage = async() => {
+  const closeModal = () => {
+    setModalVisible(false);
+  };
+  
+  return (
     
-    const {product} = await obtenerProductosDummyJson()
-
-    useEffect(() => {
-        
-    },[])
-  return <div>
-    <h1>PRODUCTOS DMMY JSON API</h1>
-    {products.map(product => (
-    <TarjetaProductoDummy product = {product}/>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <button onClick={openModal}>Abrir Modal</button>
     
-  ))}
-  </div>
-}
+      
+      {products.map((producto)=> <TarjetaProductoDummy producto={producto}/>)}
+      <button onClick={closeModal} className="mt-4">Cerrar Modal</button>
+    </div>
+  );
+};
+
+export default DummyJsonPage
